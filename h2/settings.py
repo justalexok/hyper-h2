@@ -150,8 +150,9 @@ class ChangedSetting:
             self.new_value
         )
 
+from collections.abc import MutableMapping
 
-class Settings(collections.MutableMapping):
+class Settings(MutableMapping):
     """
     An object that encapsulates HTTP/2 settings state.
 
